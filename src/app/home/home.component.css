@@ -1,0 +1,91 @@
+/* h2 {
+    font-size: 1.4em;
+     font-family: 'Montserrat-Regular';
+    color: #27da93;
+} */
+
+
+
+.img-circle{
+    width: 170px;
+    height: 170px;  
+     margin-left: 60px;
+}
+
+.more{
+    text-align: left;    
+    padding-right: 25px;
+}
+.adjust,clearfix {
+    width: 100%;
+    text-align: center;
+    }
+h1, h2, h3, h4, h5, h6, clr {
+    margin: 0 0 20px 0;
+    text-transform: none;
+    color: rgb(20, 173, 90);
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.fnt{
+    color:#ee7600;
+     font-family:Courier New ;
+ }
+.well h5{
+    float: right;
+}
+
+ 
+
+.services{
+    font-family: cursive;
+    background-color: white;
+}
+.service-top p {
+    color: #0c0b0b;
+}
+.men-grid{
+text-align: center;
+}
+
+.imgs{
+    border-radius: 50%;
+}
+
+.review{
+    float: right;
+    margin-right: 5%;
+    text-align: center;
+
+}
+@media only screen and (max-width: 500px) {
+    .service-top h3 {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .service-top h3 {
+        font-size: 22px;
+    }
+    .ser-grid{
+       width: 20%;
+       float: left;
+    }
+    .ser-top {
+        float: right;
+       width: 70%;
+    }
+
+}
+@media only screen and (max-width: 720px) {
+    .container h3 {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 500px) {
+ 
+}
+

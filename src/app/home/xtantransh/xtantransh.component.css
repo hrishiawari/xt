@@ -1,0 +1,73 @@
+.red{
+    /* background: transparent; */
+    background-image: url("../../../assets/images/tt.jpg");
+   /* background-color: red; */
+   width: 100%;
+   height:500px;
+   
+ 
+}
+
+.pyro h1:hover{
+
+ background-image: -webkit-gradient(
+   linear,
+   left top,
+   right top,
+   color-stop(0.03, rgb(250,3,3)),
+   color-stop(0.30, rgb(0, 107, 36)),
+   color-stop(0.60, rgb(233, 236, 38)),
+   color-stop(0.80, rgb(42,24,173))
+   
+   );
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ .pyro h2:hover{
+    
+     background-image: -webkit-gradient(
+       linear,
+       left top,
+       right top,
+       color-stop(0.25, rgb(250,3,3)),
+       color-stop(0.50, rgb(0, 107, 36)),
+       color-stop(0.75, rgb(233, 236, 38)),
+       color-stop(0.100, rgb(42,24,173))
+       
+       );
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     }
+
+
+.red h2{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+.red h1{
+  
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .red h2{
+        text-align: center;
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .red h1{
+      
+        text-align: center;
+        color: white;
+        font-style: italic;
+        font-size: 50px;
+    }
+}

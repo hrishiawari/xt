@@ -1,0 +1,109 @@
+.tab {
+    
+     background: #008f47;
+
+    
+   }
+
+.tab a{
+    color:white;
+}
+
+
+.navbar{
+     background-color: #13ec96;
+   border: none;
+   border-radius: none;
+ }
+ /* @-webkit-keyframes blackWhite {  
+    0% { color: red; }
+    25% { color: green; }       
+    50% { color: blue; }
+    75% { color: yellow; }
+  } */
+  .navbar-header a:hover{
+     font-size: 30px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(250,3,3)),
+    color-stop(0.30, rgb(0, 107, 36)),
+    color-stop(0.60, rgb(233, 236, 38)),
+    color-stop(0.80, rgb(42,24,173))
+    
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+ 
+/*   
+  .xt {
+    color: black;
+    -webkit-animation-name: blackWhite;
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 3s; 
+  } */
+ 
+/* .logo{
+    margin-top: 12px;
+    margin-left: 9px;
+} 
+.a{
+    margin-top: 12px;
+    word-spacing: 9px;
+    margin-right: 9px;
+
+} */
+.container-fluid ul li:hover {
+cursor: pointer;
+cursor: hand;
+background-color:lightblue;
+font-size: 20px;    
+}
+/* .navbar-header a{
+    font-weight:bold;
+    font-size: 20px;
+    
+}
+.navbar-header{
+    margin-left: 7%;
+} */
+.btn{
+    display: none;
+   
+}
+/* .show{
+    display: none;
+
+} */
+
+
+
+@media only screen and (max-width: 720px) {
+    .container h3 {
+        font-size: 25px;
+    }
+    .liststyle ul li:hover {
+        cursor: pointer;
+        cursor: hand;
+        /* background-color:lightblue; */
+        font-size: 20px;    
+        }
+    /* .nav{
+        display: none;
+    } */
+    /* .navbar-header{
+        float: left;
+        margin-left: 7%;
+    } */
+    /* .show{
+       display: block;
+    } */
+    .btn{
+     margin-top:2%; 
+        margin-right:10% ;
+        display: block;
+    float: right;    
+    }
+}

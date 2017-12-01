@@ -1,0 +1,52 @@
+<div class="row title">
+    <h1>Web Apps</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+          <div class="col-md-4">  <br>
+            <mat-card class="heights" *ngIf="!showCard1">  
+                <img src="assets/images/ab.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+                     <br>                                                                       
+                     <div class="adjust">
+                    <strong>xTantransh</strong>
+                    </div>
+                    <div class="clearfix" style="text-align:center" (click)="showCard1=!showCard1"> 
+                    <a  class="hvr-sweep-to-right more">See Details</a>
+                     </div>
+                </mat-card>
+                <mat-card *ngIf="showCard1" class="heights">           
+                        <div class=" ser-grid"(click)="showCard1=!showCard1">	
+                            <a class="hi-icon hi-icon-archive glyphicon glyphicon-remove"> </a>
+                        </div>
+                          <div class="adjust">
+                          </div>
+                </mat-card>
+          </div>
+
+          <div class="col-md-4">  <br>
+            <mat-card class="heights" *ngIf="!showCard">  
+            <img src="assets/images/ab.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+                 <br>                                                                       
+                 <div class="adjust">
+                <strong>xTantransh</strong>
+                </div>
+                <div class="clearfix" style="text-align:center" (click)="show()"> 
+                <a  class="hvr-sweep-to-right more">See Details</a>
+                 </div>
+            </mat-card>
+            <mat-card *ngIf="showCard" class="heights">           
+                    <div class=" ser-grid"(click)="show()">	
+                        <a class="hi-icon hi-icon-archive glyphicon glyphicon-remove"> </a>
+                    </div>
+                      <div class="adjust">
+                      </div>
+            </mat-card>
+          
+
+          </div>
+
+        
+
+
+          </div>
+  </div>
