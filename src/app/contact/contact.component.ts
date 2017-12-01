@@ -31,8 +31,13 @@ export class ContactComponent implements OnInit {
       this.GoldData=data,
      console.log(this.GoldData);
      console.log(this.GoldData.success)
+     document.getElementById("sidebar").classList.toggle('active');
       }
     );
+  }
+  next(){
+
+    document.getElementById("sidebar").classList.toggle('active');
   }
 
 }
