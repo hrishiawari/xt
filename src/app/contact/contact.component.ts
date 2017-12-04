@@ -8,6 +8,9 @@ import { ContactserService } from 'app/netservices/contactser.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  contactmsg: string;
+  contacttitle: string;
+  okk;
   status;
   data;
   GoldData:any;
@@ -18,26 +21,37 @@ export class ContactComponent implements OnInit {
     message:''
   };
   constructor(
+    
     private ser:ContactserService
   ) { }
 
   ngOnInit() {
   }
   onFrmSub(myFrm?: NgForm) {
-    
    
+    window.onscroll = function () { window.scrollTo(0,0); };
     this.ser.submit(myFrm.form.value).subscribe(
       data => {
-      this.GoldData=data,
-     console.log(this.GoldData);
-     console.log(this.GoldData.success)
-     document.getElementById("sidebar").classList.toggle('active');
+      this.GoldData=data
+      if(this.GoldData.success==true)
+      {
+        this.okk=true;
+        this.contacttitle=" Thank you for getting in touch!";
+        this.contactmsg="  One of our colleagues will get back to you shortly.Have a great day!"
+        
       }
+      else{
+        this.okk=true;
+        this.contacttitle="Something Went Wrong !!!";
+        this.contactmsg="Please Try Again..."
+      }
+      }
+      
     );
   }
   next(){
-
-    document.getElementById("sidebar").classList.toggle('active');
+    this.okk=false;
+    window.onscroll = function () { window.scrollTo(0,window.scrollY); };
   }
 
 }

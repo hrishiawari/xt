@@ -1,13 +1,10 @@
+<div class="stop">
 <div class="bluebox">
         <h1>Connect with xTantransh</h1>
     </div>
-
-    
-<div class="container">
+    <div class="container">
   <div class="row text-center">
-    
-
-</div><!-- /.row -->
+    </div><!-- /.row -->
 </div><!-- /.container -->
      <div class="container">
         <div class="row form-container ">
@@ -35,29 +32,29 @@
                     </form>
             </mat-card>
             </div>
-            <div id="sidebar" (click)="next()">
-               <div class="thk">
-                  asd
-               </div>
-            </div>
-            <div class="col-md-6">
+                      <div class="col-md-6">
                     <mat-card class="cards "style="line-height:30px;        ">
-        
-                        <h3>Contact Us</h3> <br>
-                      
-
-
-
+                     <h3>Contact Us</h3> <br>
                         developers@xtantransh.com<br>
                         xtantransh@gmail.com<br>
                         Address:Pune, Maharashtra.<br>
                     </mat-card>
                     </div> 
-
-
-
-
         </div>
     </div>
-    </div><!-- /.container -->
-    <!-- <app-footer></app-footer> -->
+    </div>
+
+</div>
+
+
+
+<div class="fixer" *ngIf="okk" (click)="next()">
+<mat-card>    
+      <mat-card-title>
+            {{contacttitle}}
+    </mat-card-title>
+       
+       {{contactmsg}}
+</mat-card>
+</div>
+

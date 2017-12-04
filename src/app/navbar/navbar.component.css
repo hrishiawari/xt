@@ -58,7 +58,7 @@
 .container-fluid ul li:hover {
 cursor: pointer;
 cursor: hand;
-background-color:lightblue;
+background-color:rgba(1, 151, 131, 0.432);
 font-size: 20px;    
 }
 /* .navbar-header a{
