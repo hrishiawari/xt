@@ -21,7 +21,7 @@ import { WebappComponent } from './work/webapp/webapp.component';
 import { XtantranshComponent } from './home/xtantransh/xtantransh.component';
 import { FormsModule } from '@angular/forms';
 import { ContactserService } from 'app/netservices/contactser.service';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 @NgModule({
   declarations: [
@@ -44,7 +44,8 @@ import { HttpModule } from '@angular/http';
   
   ],
   imports: [
-    BrowserModule,MatCardModule,Approuter, HttpClientModule,  FormsModule,HttpModule
+    BrowserModule,MatCardModule,Approuter, HttpClientModule,HttpModule, ReactiveFormsModule,
+    FormsModule
   ],
   providers: [ContactserService],
   bootstrap: [AppComponent]

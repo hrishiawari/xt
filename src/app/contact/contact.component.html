@@ -11,7 +11,53 @@
             <div class="col-md-12">
             <div class="col-md-6">
             <mat-card class="cards">
-                        <h3>Stay in touch</h3>
+
+
+
+
+                    <h3>Stay in touch</h3><hr>
+                    <form class="ajax-form" id="contactForm" [formGroup]="myFrm" (ngSubmit)="onFrmSub()" novalidate> 
+                            <div class="form-group">
+                           <input class="form-control"
+                             type="text" 
+                             placeholder="Your Name" 
+                             formControlName="name">
+                             <span class="text-muted" *ngIf="!myFrm.controls.name.valid">Enter Your Name*</span>
+                            </div>
+                            <div class="form-group">
+                           <input  class="form-control"
+                             type="text" 
+                             placeholder="Email" 
+                             formControlName="email">
+                             <span class="text-muted" *ngIf="!myFrm.controls.email.valid" >Enter Email*</span>
+                          </div>
+                          <div class="form-group">
+                           <input class="form-control"
+                             type="text" 
+                             placeholder="Mobile No" 
+                             formControlName="phone">
+                             <span class="text-muted" 
+                             *ngIf="!myFrm.controls.phone.valid">Enter Mobile Number*</span>
+                          </div>
+                          <div class="form-group">
+                                <textarea class="form-control"
+                                  type="text" 
+                                  placeholder="message" 
+                                  formControlName="message"></textarea>
+                                  <span class="text-muted" 
+                                  *ngIf="!myFrm.controls.message.valid">Enter Message*</span>
+                               </div>
+                          <div class="form-group">
+                           <input 
+                             type="submit" 
+                             value="submit" 
+                             name="submit" 
+                             class="btn btn-info"
+                             [disabled]="!myFrm.valid">
+                          </div>
+                          </form>
+
+                        <!-- <h3>Stay in touch</h3>
                         <br>
                  <form class="ajax-form" id="contactForm"  (ngSubmit)="onFrmSub(myFrm)" #myFrm="ngForm">
                         <div class="form-group">
@@ -29,11 +75,11 @@
                         <div class="form-group">
                             <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-fw"></i> Send</button>
                         </div>
-                    </form>
+                    </form> -->
             </mat-card>
             </div>
                       <div class="col-md-6">
-                    <mat-card class="cards "style="line-height:30px;        ">
+                    <mat-card class="cards "style="line-height:30px ">
                      <h3>Contact Us</h3> <br>
                         developers@xtantransh.com<br>
                         xtantransh@gmail.com<br>
